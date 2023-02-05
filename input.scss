@@ -22,9 +22,13 @@ body {
 }
 
 #root {
+  height: 100vh;
   max-width: 1440px;
   margin: auto;
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 header {
@@ -81,5 +85,23 @@ main {
   &:hover {
     background-color: $soft-magenta;
     color: white;
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  padding: 2rem 0;
+  @media screen and (max-width: 375px) {
+    justify-content: center;
+  }
+}
+
+svg {
+  color: white;
+  cursor: pointer;
+  &:hover {
+    fill: $soft-magenta;
   }
 }
