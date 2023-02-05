@@ -10,11 +10,77 @@ body {
   background-color: hsl(257deg, 40%, 49%);
   background-repeat: no-repeat;
   background-size: auto 100%;
+  color: white;
+  font-family: "Open Sans", sans-serif;
 }
 @media screen and (max-width: 375px) {
   body {
     background-image: url("./images/bg-mobile.svg");
   }
+}
+
+#root {
+  max-width: 1440px;
+  margin: auto;
+  padding: 1rem;
+}
+
+header {
+  padding: 2rem 0;
+}
+
+main section {
+  display: flex;
+  gap: 2rem;
+}
+@media screen and (max-width: 800px) {
+  main section {
+    flex-direction: column;
+  }
+}
+
+#illustration {
+  flex: 60%;
+}
+#illustration img {
+  width: 100%;
+}
+
+#message {
+  flex: 40%;
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+#message h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+}
+#message p {
+  font-size: 16px;
+  line-height: 24px;
+}
+@media screen and (max-width: 375px) {
+  #message {
+    text-align: center;
+    align-items: center;
+  }
+}
+
+#register-btn {
+  border: none;
+  outline: none;
+  width: 180px;
+  height: 40px;
+  color: hsl(257deg, 40%, 49%);
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+#register-btn:hover {
+  background-color: hsl(300deg, 69%, 71%);
+  color: white;
 }
 
 /*# sourceMappingURL=output.css.map */
